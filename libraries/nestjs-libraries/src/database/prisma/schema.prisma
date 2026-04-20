@@ -281,10 +281,12 @@ model Credits {
 }
 
 model Subscription {
-  id               String           @id @default(cuid())
-  organizationId   String           @unique
-  subscriptionTier SubscriptionTier
-  identifier       String?
+  id                String           @id @default(cuid())
+  organizationId    String           @unique
+  subscriptionTier  SubscriptionTier
+  identifier        String?
+  paymentProvider   String           @default("vnpay")
+  paymentProviderId String?
   cancelAt         DateTime?
   period           Period
   totalChannels    Int

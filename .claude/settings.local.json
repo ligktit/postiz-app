@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /d/Projects/postiz-app/apps/backend/src/api/routes -name \"*.controller.ts\" -exec basename {} \\\\;)",
+      "Bash(sed 's/\\\\.provider.ts//')",
+      "Bash(xargs grep *)",
+      "Bash(grep -r \"NextResponse\\\\|NEXT_PUBLIC\" /d/Projects/postiz-app/apps/frontend -type f --include=\"*.ts\" --include=\"*.tsx\")"
+    ]
+  }
+}

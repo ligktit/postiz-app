@@ -33,14 +33,14 @@ export const startMcp = async (app: INestApplication) => {
   };
 
   const mastra = await mastraService.mastra();
-  const agent = mastra.getAgent('postiz');
+  const agent = mastra.getAgent('lightcircle');
   const tools = await agent.listTools();
 
   const serverConfig = {
-    name: 'Postiz MCP',
+    name: 'LightCircle MCP',
     version: '1.0.0',
     tools,
-    agents: { postiz: agent },
+    agents: { lightcircle: agent },
   };
 
   const server = new MCPServer(serverConfig);

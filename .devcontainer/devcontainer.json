@@ -1,6 +1,6 @@
 {
-	"name": "Postiz Dev Container",
-	"image": "localhost/postiz-devcontainer",
+	"name": "LightCircle Dev Container",
+	"image": "localhost/lightcircle-devcontainer",
 	"features": {},
 	"customizations": {
 		"vscode": {
